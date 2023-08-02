@@ -8,7 +8,8 @@ class App {
 }
 
 const app = new App().application;
-app.use(cors());
+
+app.use(cors({ origin: true }));
 
 app.listen(3001, () => {
   console.info('✅ Start sparcs sample server✅');

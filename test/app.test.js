@@ -16,12 +16,12 @@ describe('GET /', () => {
   });
 });
 
-// describe('GET /', () => {
-//   it('should return 404 (must fail)', () => {
-//     return request(app).get('/')
-//       .expect(404);
-//   });
-// });
+describe('GET /', () => {
+  it('should return 404 (must fail)', () => {
+    return request(app).get('/')
+      .expect(404);
+  });
+});
 
 // IN-LAB TODO: test script for /health-check
 
